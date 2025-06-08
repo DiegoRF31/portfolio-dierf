@@ -25,7 +25,8 @@
     ],
     "paths": {
       "@services/*": ["src/app/services/*"],
-      "@shared/*": ["src/app/modules/shared/*"]
+      "@shared/*": ["src/app/modules/shared/*"],
+      "@info/*": ["src/app/modules/info/*"]
     }
   },
   "angularCompilerOptions": {

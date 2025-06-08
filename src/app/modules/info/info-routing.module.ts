@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { InfoPage } from './pages/info/info.page';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: InfoPage
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
