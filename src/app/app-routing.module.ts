@@ -12,6 +12,10 @@ const routes: Routes = [
         loadChildren: () => import('@info/info.module').then(m => m.InfoModule)
       }
     ]
+  },
+  {
+    path: 'info',
+        loadChildren: () => import('@info/info.module').then(m => m.InfoModule)
   }
 ];
 

@@ -1,0 +1,32 @@
+section {
+    display:flex;
+    justify-content: center;
+    padding: 0rem 0rem;
+    border-radius: 3rem;
+    border-width: 0.5rem;
+    background-color: var(--info-main-section);
+    height: 70rem;
+    width: 120rem;
+}
+
+div.display {
+    width: 70%;
+    height: 70rem;
+    background-color: var(--info-main-dysplay);
+    border-radius: 3rem;
+}
+
+div.basic-info {
+    display: block;
+    float: left;
+    width: 30%;
+    height: 70rem;
+}
+
+
+div {
+    
+    justify-content: center;
+    display:flex;
+    padding: 4rem 7rem;
+}
