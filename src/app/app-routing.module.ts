@@ -5,7 +5,17 @@ import { MainLayout } from '@shared/main/main.layout';
 const routes: Routes = [
 
   {path: '',
-    component: MainLayout
+    component: MainLayout,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('@info/info.module').then(m => m.InfoModule)
+      }
+    ]
+  },
+  {
+    path: 'info',
+        loadChildren: () => import('@info/info.module').then(m => m.InfoModule)
   }
 ];
 

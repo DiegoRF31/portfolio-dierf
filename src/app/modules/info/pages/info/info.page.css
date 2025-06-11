@@ -1,0 +1,47 @@
+section {
+    display:flex;
+    justify-content: center;
+    padding: 0rem 0rem;
+    border-radius: 3rem;
+    border-width: 0.5rem;
+    background-color: var(--info-main-section);
+    height: 70rem;
+    width: 120rem;
+    transition: 0.2s linear;
+}
+
+div.display {
+    display: inline;
+    width: 70%;
+    height: 70rem;
+    background-color: var(--info-main-dysplay);
+    border-radius: 3rem;
+    transition: 0.2s linear;
+}
+
+div.basic-info {
+    display: inline;
+    float: left;
+    width: 30%;
+    height: 70rem;
+}
+
+
+div {
+    justify-content: center;
+    display:flex;
+    padding: 4rem 7rem;
+}
+
+.page {
+  opacity: 0;
+  transform: translateY(2rem);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -2,12 +2,13 @@
 la etiqueta <body> tiene la clase "light" */
 body.light {
    /* LAYOUT */
-   --top-bar-background: #f0f0f0;
+   --top-bar-background: #b3b3b3;
    --body-background: #fcfcfc;
    --main-text-color: #000;
    --main-hover-background: rgba(90, 90, 90, 0.1);
    --color-scrollbar-light: rgba(0, 0, 0, 0.1);
-
+   --info-main-section: lab(36.38% -15.5 -7.45);
+   --info-main-dysplay: lab(28.88% -12.81 -6.05);
    /* POSTS */
    --post-list-item-background: #eeeeee;
 }
