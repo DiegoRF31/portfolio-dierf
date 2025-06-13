@@ -13,4 +13,10 @@ body.dark {
 
    /* POSTS */
    --post-list-item-background: #444444;
+
+   /*CONTACT*/
+   --box-info-background: #2a2a2a;
+
+  --background-image-url: url('/images/darck_body.jpg');
+
 }
