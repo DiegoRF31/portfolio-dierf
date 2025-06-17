@@ -45,7 +45,22 @@ h4 {
    margin-bottom: 1rem;
 }
 
-@media screen and (max-with: 1024px) {
+@media screen and (max-width: 1219px) {
 
+   body {
+      
+      background-image: none;
+      padding-bottom: 10rem;
+
+   }
+}
+
+
+@media screen and (max-width: 900px) {
+body {
+      
+      padding-bottom: 12rem;
+
+   }
    
 }
