@@ -50,17 +50,6 @@ h4 {
    body {
       
       background-image: none;
-      padding-bottom: 10rem;
 
    }
-}
-
-
-@media screen and (max-width: 900px) {
-body {
-      
-      padding-bottom: 12rem;
-
-   }
-   
 }

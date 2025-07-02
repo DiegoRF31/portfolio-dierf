@@ -6,6 +6,7 @@
    justify-content: space-between;
    background: var(--top-bar-background);
    transition: 0.2s linear;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 ul {
@@ -62,7 +63,7 @@ section {
    border-radius: 3rem;
    border-width: 0.5rem;
    background-color: var(--info-main-section);
-   height: 70rem;
+   height: auto;
    width: 120rem;
    transition: 0.2s linear;
 }
@@ -70,7 +71,7 @@ section {
 div.display {
    display: inline;
    width: 70%;
-   height: 70rem;
+   height: auto;
    background-color: var(--info-main-dysplay);
    border-radius: 3rem;
    transition: 0.2s linear;
@@ -85,7 +86,7 @@ div.basic-info {
    display: inline;
    float: left;
    width: 30%;
-   height: 70rem;
+   height: auto;
 }
 
 
@@ -140,9 +141,8 @@ div {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 10rem;
+      margin-top: 1rem;
       padding: 1rem;
-      margin-bottom: 2rem;
    }
 
 
@@ -154,27 +154,26 @@ div {
       transition: 0.2s linear;
       width: 100%;
       margin-bottom: 2rem;
-      margin-top: 10rem;
       display: block;
    }
 
-   
+  main {
+   padding-top: 6rem; 
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
 
    div.display {
       background-color: var(--info-main-section);
       width: 100%;
       margin-bottom: 4rem;
       display: block;
-      padding-bottom: 4rem;
-      margin-top: 10rem;
    }
 
    div.display {
       margin-top: 0;
    }
 }
-
-
 
 @media screen and (max-width: 1024px) {
    section {
@@ -183,15 +182,11 @@ div {
       flex-direction: column;
       align-items: center;
       padding: 1rem;
-      padding-bottom: 15rem;
    }
 
-   main {
-      padding-top: 20rem;
-   }
 
    div.basic-info {
-      height: 70rem;
+      height: auto;
       background-color: var(--info-main-dysplay);
       border-radius: 3rem;
       transition: 0.2s linear;
@@ -199,12 +194,4 @@ div {
       display: block;
    }
 
-}
-
-@media screen and (max-width: 722px) { 
-
-   main {
-      padding-top: 22rem;
-      padding-bottom: 22rem;
-   }
 }
