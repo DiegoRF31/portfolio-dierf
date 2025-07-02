@@ -1,36 +1,10 @@
-section {
-    display:flex;
-    justify-content: center;
-    padding: 0rem 0rem;
-    border-radius: 3rem;
-    border-width: 0.5rem;
-    background-color: var(--info-main-section);
-    height: 70rem;
-    width: 120rem;
-    transition: 0.2s linear;
-}
-
 div.display {
     display: inline;
     width: 70%;
     height: 70rem;
-    background-color: var(--info-main-dysplay);
+    background-color: black;
     border-radius: 3rem;
     transition: 0.2s linear;
-}
-
-div.basic-info {
-    display: inline;
-    float: left;
-    width: 30%;
-    height: 70rem;
-}
-
-
-div {
-    justify-content: center;
-    display:flex;
-    padding: 4rem 7rem;
 }
 
 .page {
@@ -44,4 +18,14 @@ div {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media screen and (max-width: 1338px) {
+
+   .box-info {
+  flex: 1 1 10rem;
+  max-width: 30rem;
+  min-width: 30rem;
+  height: 10rem;
+}
 }

@@ -3,12 +3,17 @@ la etiqueta <body> tiene la clase "light" */
 body.light {
    /* LAYOUT */
    --top-bar-background: #b3b3b3;
-   --body-background: #fcfcfc;
+   --body-background: #e7e7e7;
    --main-text-color: #000;
-   --main-hover-background: rgba(90, 90, 90, 0.1);
+   --main-hover-background: rgba(107, 107, 107, 0.1);
    --color-scrollbar-light: rgba(0, 0, 0, 0.1);
-   --info-main-section: lab(36.38% -15.5 -7.45);
-   --info-main-dysplay: lab(28.88% -12.81 -6.05);
+   --info-main-section: lab(53.22% -21.37 -9.68);
+   --info-main-dysplay: lab(45.2% -18.13 -8.8);
    /* POSTS */
    --post-list-item-background: #eeeeee;
+
+   /*CONTACT*/
+   --box-info-background: lab(28.88% -12.81 -6.05);
+
+   --background-image-url: url('/images/ligth_body.jpg');
 }

@@ -1,10 +1,12 @@
-header {
+.top-bar {
    height: 7rem;
    padding: 1rem;
    display: flex;
    align-items: center;
    justify-content: space-between;
    background: var(--top-bar-background);
+   transition: 0.2s linear;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 ul {
@@ -22,6 +24,7 @@ a {
    border-radius: 0.2rem;
    transition: background-color 0.2s linear;
    border-color: var(--main-layout-border-bottom);
+   transition: 0.2s linear;
 }
 
 button {
@@ -34,7 +37,9 @@ button {
    transition: background-color 0.2s linear;
 }
 
-a:hover, a.active, button:hover {
+a:hover,
+a.active,
+button:hover {
    background: var(--main-hover-background);
 }
 
@@ -49,4 +54,144 @@ figure img {
 
 main {
    padding: 2rem;
+}
+
+section {
+   display: flex;
+   justify-content: center;
+   padding: 0rem 0rem;
+   border-radius: 3rem;
+   border-width: 0.5rem;
+   background-color: var(--info-main-section);
+   height: auto;
+   width: 120rem;
+   transition: 0.2s linear;
+}
+
+div.display {
+   display: inline;
+   width: 70%;
+   height: auto;
+   background-color: var(--info-main-dysplay);
+   border-radius: 3rem;
+   transition: 0.2s linear;
+}
+
+.display {
+   padding: 2rem;
+   text-align: center;
+}
+
+div.basic-info {
+   display: inline;
+   float: left;
+   width: 30%;
+   height: auto;
+}
+
+
+div {
+   justify-content: center;
+   display: flex;
+   padding: 4rem 7rem;
+}
+
+#main_img {
+   border: 0.5rem solid white;
+   border-radius: 50%;
+   height: 12rem;
+   width: 12rem;
+   display: block;
+   margin: 0 auto;
+   overflow: hidden;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+#main_img img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   background-color: red;
+}
+
+.page {
+   opacity: 0;
+   transform: translateY(2rem);
+   animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+
+@media screen and (max-width: 1219px) {
+   .top-bar {
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+   }
+
+   section {
+      background: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+      padding: 1rem;
+   }
+
+
+
+   div.basic-info {
+      height: 55rem;
+      background-color: var(--info-main-dysplay);
+      border-radius: 3rem;
+      transition: 0.2s linear;
+      width: 100%;
+      margin-bottom: 2rem;
+      display: block;
+   }
+
+  main {
+   padding-top: 6rem; 
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+
+   div.display {
+      background-color: var(--info-main-section);
+      width: 100%;
+      margin-bottom: 4rem;
+      display: block;
+   }
+
+   div.display {
+      margin-top: 0;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   section {
+      background: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+   }
+
+
+   div.basic-info {
+      height: auto;
+      background-color: var(--info-main-dysplay);
+      border-radius: 3rem;
+      transition: 0.2s linear;
+      width: 100%;
+      display: block;
+   }
+
 }
