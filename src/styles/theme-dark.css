@@ -19,4 +19,5 @@ body.dark {
 
   --background-image-url: url('/images/darck_body.jpg');
 
+  --info-main-marker: lab(53.22% -21.37 -9.68);
 }

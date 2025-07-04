@@ -8,11 +8,9 @@ html {
 }
 
 body {
-
    background: var(--body-background);
    background-image: var(--background-image-url);
    background-size: 100% 100%;
-   /* 🔧 Forzar deformación */
    background-repeat: no-repeat;
    background-position: center;
 
@@ -44,6 +42,7 @@ h4 {
    font-size: 2.2rem;
    margin-bottom: 1rem;
 }
+
 
 @media screen and (max-width: 1219px) {
 
