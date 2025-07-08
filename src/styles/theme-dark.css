@@ -6,7 +6,7 @@ body.dark {
    --body-background: #242424;
    --main-text-color: #fff;
    --main-hover-background: rgba(255, 255, 255, 0.1);
-   --color-scrollbar-light: rgba(255, 255, 255, 0.1);
+   --color-scrollbar-light: rgba(65, 65, 65, 0.178);
 
    --info-main-section: lab(36.38% -15.5 -7.45);
    --info-main-dysplay: lab(28.88% -12.81 -6.05);

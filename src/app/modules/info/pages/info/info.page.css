@@ -20,6 +20,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
+
+
 .info-section {
   margin-bottom: 3rem;
   padding: 1rem 1.5rem;
@@ -69,14 +71,12 @@ ul li::marker {
 }
 
 
-@media screen and (max-width: 1219px) {
 
+@media screen and (max-width: 1219px) {
   .info-container {
-    max-height: auto;
-    overflow-y: auto;
-    padding: 2rem;
-    border-radius: 2rem;
-    overflow-x: hidden;
+    max-height: none;  
+    height: auto;       
+    overflow: visible;  
   }
 
 }

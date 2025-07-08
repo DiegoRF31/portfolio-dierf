@@ -17,19 +17,13 @@ body {
    font-family: 'Roboto', Helvetica, sans-serif;
    font-size: 1.4rem;
    color: var(--main-text-color);
-   scrollbar-color: var(--color-scrollbar-light) var(--color-scrollbar-light);
+   scrollbar-color: var(--color-scrollbar-light) transparent;
+   
    scrollbar-width: thin;
    transition: 0.2s linear;
 }
 
-body::-webkit-scrollbar-thumb {
-   background: var(--color-scrollbar-light);
-}
 
-body::-webkit-scrollbar {
-   width: 0.7rem;
-   background: var(--color-scrollbar-light);
-}
 
 h1 {
    font-weight: bold;
