@@ -1,23 +1,28 @@
-/* Las variables de este tema sólo aplicarán a todos los demás estilos si
-la etiqueta <body> tiene la clase "dark" */
 body.dark {
-   /* LAYOUT */
-   --top-bar-background: #303030;
-   --body-background: #242424;
-   --main-text-color: #fff;
-   --main-hover-background: rgba(255, 255, 255, 0.1);
-   --color-scrollbar-light: rgba(65, 65, 65, 0.178);
+  /* LAYOUT */
+  --top-bar-background: #303030;
+  --body-background: #242424;
+  --main-text-color: #fff;
+  --main-hover-background: rgba(255, 255, 255, 0.1);
+  --color-scrollbar-light: rgba(65, 65, 65, 0.178);
 
-   --info-main-section: lab(36.38% -15.5 -7.45);
-   --info-main-dysplay: lab(28.88% -12.81 -6.05);
+  --info-main-section: lab(36.38% -15.5 -7.45);
+  --info-main-dysplay: lab(28.88% -12.81 -6.05);
 
-   /* POSTS */
-   --post-list-item-background: #444444;
+  /* POSTS */
+  --post-list-item-background: #444444;
 
-   /*CONTACT*/
-   --box-info-background: #2a2a2a;
+  /*CONTACT*/
+  --box-info-background: #2a2a2a;
 
+  /*main backwround image*/
   --background-image-url: url('/images/darck_body.jpg');
 
+  /*markers of test like li's into ul's*/
   --info-main-marker: lab(53.22% -21.37 -9.68);
+  --info-main-marker-small: lab(45.2% -18.13 -8.8);
+
+  /*buttom line under titles*/
+  --border-bottom: lab(36.38% -15.5 -7.45);
+  --border-bottom-small: lab(45.2% -18.13 -8.8);
 }

@@ -91,6 +91,14 @@ div.basic-info {
    height: auto;
 }
 
+div.basic-info p{
+   font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--main-text-color);
+}
+
+
 
 div {
    justify-content: center;
@@ -130,7 +138,7 @@ div {
    }
 }
 
-
+/*Adjustment of resolution for smaller screens from 1219px*/
 @media screen and (max-width: 1219px) {
 
    .top-bar {
@@ -181,6 +189,7 @@ div {
    }
 }
 
+/*Adjustment of resolution for smaller screens*/
 @media screen and (max-width: 1024px) {
    section {
       background: none;

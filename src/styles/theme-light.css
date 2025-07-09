@@ -15,7 +15,15 @@ body.light {
    /*CONTACT*/
    --box-info-background: lab(28.88% -12.81 -6.05);
 
+   /*main backwround image*/
    --background-image-url: url('/images/ligth_body.jpg');
 
-   --info-main-marker: lab(36.38% -15.5 -7.45);
+   /*markers of test like li's into ul's*/
+   --info-main-marker: lab(55.55% -20.57 -13.09);
+   --info-main-marker-small: lab(45.2% -18.13 -8.8);
+
+   /*buttom line under titles*/
+   --border-bottom: lab(53.22% -21.37 -9.68);
+   --border-bottom-small: lab(37.58% -20.25 -10.66);
+
 }
