@@ -4,6 +4,7 @@ body.dark {
   --body-background: #242424;
   --main-text-color: #fff;
   --main-hover-background: rgba(255, 255, 255, 0.1);
+  --main-border-hover-background: lab(55.55% -20.57 -13.09);
   --color-scrollbar-light: rgba(65, 65, 65, 0.178);
 
   --info-main-section: lab(36.38% -15.5 -7.45);

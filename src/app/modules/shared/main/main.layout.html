@@ -5,13 +5,15 @@
    <nav>
       <ul>
          <li>
-            <a routerLink="/">About Me</a>
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About Me</a>
          </li>
          <li>
-            <a routerLink="/contact">Contact</a>
+            <a routerLink="/contact" routerLinkActive="active">Contact</a>
          </li>
          <li>
-            <button class="material-icons-sharp" type="button" (click)="changeTheme()">{{themes[theme]}}_mode</button>
+            <button class="material-icons-sharp" type="button" (click)="changeTheme()">
+               {{ themes[theme] }}_mode
+            </button>
          </li>
       </ul>
    </nav>
@@ -24,9 +26,12 @@
             <figure id="main_img">
                <img src="/images/main_img.jpg" alt="Main_Image" />
             </figure>
-            <p>I am a dynamic and creative software developer with experience in different areas such as web application building, 
-               responsive design and deployment tools. I am a highly skilled and competent professional in developing high quality, 
-               secure and scalable solutions. I consider myself a proactive, responsible and organized person capable of adapting to different teams and methodologies.</p>
+            <p>I am a dynamic and creative software developer with experience in different areas such as web application
+               building,
+               responsive design and deployment tools. I am a highly skilled and competent professional in developing
+               high quality,
+               secure and scalable solutions. I consider myself a proactive, responsible and organized person capable of
+               adapting to different teams and methodologies.</p>
             <p>
          </div>
          <div class="display">

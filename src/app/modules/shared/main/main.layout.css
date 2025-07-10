@@ -12,26 +12,29 @@
 ul {
    display: flex;
    align-items: center;
-   gap: 1rem;
+
 }
 
 a {
+   height: 7rem;
    text-decoration: none;
+   display: flex;       
+   align-items: center;   
+   justify-content: center;
    font-size: 1.5rem;
    font-weight: 600;
-   display: inline-block;
-   padding: 1rem;
-   border-radius: 0.2rem;
-   transition: background-color 0.2s linear;
-   border-color: var(--main-layout-border-bottom);
-   transition: 0.2s linear;
+   padding: 1.5rem;
+   border-bottom: 0.3rem solid transparent; 
+   transition: background-color 0.2s linear, border-color 0.2s linear;
+   margin: 0%;
 }
 
 button {
+   height: 7rem;
    border: 0;
    padding: 1rem;
    font-size: 1.8rem;
-   border-radius: 0.2rem;
+   border-bottom: 0.3rem solid transparent; 
    background: none;
    color: var(--main-text-color);
    transition: background-color 0.2s linear;
@@ -41,6 +44,7 @@ a:hover,
 a.active,
 button:hover {
    background: var(--main-hover-background);
+   border-color: var(--main-border-hover-background);
 }
 
 figure {
