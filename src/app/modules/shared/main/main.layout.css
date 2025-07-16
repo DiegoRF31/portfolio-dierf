@@ -143,7 +143,7 @@ div {
 }
 
 /*Adjustment of resolution for smaller screens from 1219px*/
-@media screen and (max-width: 1219px) {
+@media screen and (max-width: 1230px) {
 
    .top-bar {
       position: fixed;
