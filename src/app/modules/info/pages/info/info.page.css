@@ -97,7 +97,7 @@
 }
 
 /*Adjustment of resolution for smaller screens*/
-@media screen and (max-width: 12630px) {
+@media screen and (max-width: 1230px) {
   .info-container {
     max-height: none;
     height: auto;
