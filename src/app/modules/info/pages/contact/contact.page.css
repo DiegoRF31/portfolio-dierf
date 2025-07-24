@@ -1,43 +1,43 @@
 section {
-    display:flex;
-    justify-content: center;
-    padding: 0rem 0rem;
-    border-radius: 3rem;
-    border-width: 0.5rem;
-    background-color: var(--info-main-section);
-    height: 70rem;
-    width: 120rem;
-    transition: 0.2s linear;
+  display: flex;
+  justify-content: center;
+  padding: 0rem 0rem;
+  border-radius: 3rem;
+  border-width: 0.5rem;
+  background-color: var(--info-main-section);
+  height: 70rem;
+  width: 120rem;
+  transition: 0.2s linear;
 }
 
 div.display {
-    display: inline;
-    width: 70%;
-    height: 70rem;
-    background-color: var(--info-main-dysplay);
-    border-radius: 3rem;
-    transition: 0.2s linear;
+  display: inline;
+  width: 70%;
+  height: 70rem;
+  background-color: var(--info-main-dysplay);
+  border-radius: 3rem;
+  transition: 0.2s linear;
 }
 
 .display {
-    padding: 2rem;
-    text-align: center;
+  padding: 2rem;
+  text-align: center;
 }
 
 
 div.contact-info {
-    display: inline;
-    float: left;
-    width: 30%;
-    height: 70rem;
+  display: inline;
+  float: left;
+  width: 30%;
+  height: 70rem;
 }
 
 
 div {
-    
-    justify-content: center;
-    display:flex;
-    padding: 4rem 7rem;
+
+  justify-content: center;
+  display: flex;
+  padding: 4rem 7rem;
 }
 
 .contact-details {
@@ -60,7 +60,7 @@ div {
   align-items: center;
   justify-content: center;
   border-radius: 1rem;
-  box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.2s ease, background-color 0.2s ease;
   margin-top: 1rem;
@@ -70,11 +70,12 @@ div {
   transform: translateY(-0.5rem);
   background-color: #444;
 }
+
 span.material-icons-sharp {
-color: #0FC2C0;
-font-size: 3rem; 
-padding: 1rem;
- transition: 0.2s linear;
+  color: #0FC2C0;
+  font-size: 3rem;
+  padding: 1rem;
+  transition: 0.2s linear;
 }
 
 .page {
@@ -90,13 +91,30 @@ padding: 1rem;
   }
 }
 
+@media screen and (max-width: 1339px),
+screen and (max-height: 750px) {
 
-@media screen and (max-width: 1338px) {
+  .box-info {
+    max-width: 26rem;
+    min-width: 26rem;
+    height: 10rem;
+  }
 
-   .box-info {
-  flex: 1 1 10rem;
-  max-width: 30rem;
-  min-width: 30rem;
-  height: 10rem;
+  section,
+  div.display,
+  div.contact-info {
+    height: auto;
+    max-height: 70rem;
+  }
 }
+
+@media screen and (max-width: 1230px),
+screen and (max-height: 750px) {
+
+  .box-info {
+    flex: 1 1 10rem;
+    max-width: 30rem;
+    min-width: 30rem;
+    height: 10rem;
+  }
 }

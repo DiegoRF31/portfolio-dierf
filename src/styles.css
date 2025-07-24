@@ -38,7 +38,7 @@ h4 {
 }
 
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-height: 750px), screen and (max-width: 1339px){
 
    body {
       
