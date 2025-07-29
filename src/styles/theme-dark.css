@@ -10,6 +10,9 @@ body.dark {
   --info-main-section: lab(36.38% -15.5 -7.45);
   --info-main-dysplay: lab(28.88% -12.81 -6.05);
 
+  --highlight-detail: #0FC2C0;
+  --highlight-detail-hover: #0bf1ee;
+
   /* POSTS */
   --post-list-item-background: #444444;
 

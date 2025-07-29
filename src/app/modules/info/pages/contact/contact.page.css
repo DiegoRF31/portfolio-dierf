@@ -72,7 +72,7 @@ div {
 }
 
 span.material-icons-sharp {
-  color: #0FC2C0;
+  color: var(--highlight-detail);
   font-size: 3rem;
   padding: 1rem;
   transition: 0.2s linear;

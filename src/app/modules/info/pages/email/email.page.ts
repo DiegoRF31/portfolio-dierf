@@ -5,12 +5,14 @@ import { validationMessage } from 'src/types/general.types';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-email',
-  standalone: false,
+  standalone: true,        // <-- aquí lo haces standalone
+  imports: [ReactiveFormsModule],  // <-- importa lo que uses en template
   templateUrl: './email.page.html',
-  styleUrl: './email.page.css'
+  styleUrls: ['./email.page.css']
 })
 export class EmailPage {
   public formContact: FormGroup;
@@ -87,13 +89,12 @@ export class EmailPage {
       this.sending = false
       return
     }
+
     emailjs.send(environment.SERVICE_MAIL_ID, environment.TEMPLATE_MAIL_ID, this.formContact.value, environment.PUBLIC_KEY_MAIL_ID)
       .then(() => {
         this.sending = false
         this.router.navigate(['success'])
-      }, (err) => {
-        console.log('error, recuerda crear tu cuenta en EmailJs. En el Readme.md de este proyecto esta como realizar la instalación  ')
-        console.log('error ==>', err)
+      }, (err) => { console.log('error ==>', err)
         this.sending = false
       });
   }

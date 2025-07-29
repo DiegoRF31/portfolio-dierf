@@ -26,15 +26,17 @@
   align-items: center;
   font-weight: 400;
   font-size: 20px;
-  background-color: white;
+  background-color: var(--highlight-detail);
   border-radius: 9999px;
-  border: 2px solid white;
+  border: 2px solid rgb(219, 219, 219);
   padding: 0.8rem 80px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.is-outlined:hover {
-  color: white;
-  transition: all 0.2s ease-in-out;
+.btn-contact:hover {
+  transform: translateY(-0.5rem);
+  background-color: var(--highlight-detail-hover);
+  color: rgb(68, 68, 68);
 }
 
 .w-100 {
@@ -53,6 +55,7 @@
 .col-6 {
   width: 50%;
 }
+
 .col-12 {
   width: 100%;
 }

@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { EmailPage } from './email.page';
 
 const routes: Routes = [
-   {
-    path: 'email',
+  {
+    path: '',
     component: EmailPage
   }
 ];

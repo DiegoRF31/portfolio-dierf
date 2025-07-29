@@ -10,6 +10,9 @@ body.light {
    --color-scrollbar-light: rgba(240, 240, 240, 0.068);
    --info-main-section: lab(53.22% -21.37 -9.68);
    --info-main-dysplay: lab(45.2% -18.13 -8.8);
+   --highlight-detail: #0FC2C0;
+   --highlight-detail-hover: #0bf1ee;
+
    /* POSTS */
    --post-list-item-background: #eeeeee;
 

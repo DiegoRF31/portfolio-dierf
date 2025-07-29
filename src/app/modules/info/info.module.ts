@@ -4,14 +4,14 @@ import { CommonModule } from '@angular/common';
 import { InfoRoutingModule } from './info-routing.module';
 import { InfoPage } from './pages/info/info.page';
 import { ContactPage } from './pages/contact/contact.page';
-import { EmailPage } from './pages/email/email.page';
+import { SuccessPage } from './pages/success/success.page';
 
 
 @NgModule({
   declarations: [
     InfoPage,
     ContactPage,
-    EmailPage
+    SuccessPage
   ],
   imports: [
     CommonModule,

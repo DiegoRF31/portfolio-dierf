@@ -2,7 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InfoPage } from './pages/info/info.page';
 import { ContactPage } from './pages/contact/contact.page';
-import { EmailPage } from './pages/email/email.page';
+import { SuccessPage } from './pages/success/success.page';
 
 const routes: Routes = [
   {
@@ -13,10 +13,15 @@ const routes: Routes = [
     path: 'contact',
     component: ContactPage
   },
-   {
+  {
     path: 'email',
-    component: EmailPage
-  }
+    loadComponent: () => import('./pages/email/email.page').then(m => m.EmailPage)
+  },
+  {
+  path: 'success',
+  component: SuccessPage
+}
+
 
 ];
 
