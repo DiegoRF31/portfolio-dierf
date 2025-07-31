@@ -1,4 +1,3 @@
-
 .section-title {
   font-size: 2.8rem;
   font-weight: 700;
@@ -44,13 +43,25 @@
   font-style: italic;
 }
 
-/* Styles for the skill section */
-.skills-container {
+.skills-container,
+.logo-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px 30px;
-  padding-left: 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 3rem;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
 }
+
+.logo-container img {
+  width: 100%;
+  max-width: 10rem;
+  height: 100%;
+  object-fit: contain;
+  opacity: 80%;
+  margin-top: 2rem;
+}
+
 
 .skill-item {
   display: flex;
@@ -97,7 +108,8 @@
 }
 
 /*Adjustment of resolution for smaller screens*/
-@media screen and (max-height: 750px), screen and (max-width: 1219px) {
+@media screen and (max-height: 750px),
+screen and (max-width: 1219px) {
   .info-container {
     max-height: none;
     height: auto;
@@ -106,19 +118,22 @@
 
   .skills-container {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
   }
 
   .info-section h2 {
     border-bottom: 3px solid var(--border-bottom-small);
-    
+
   }
+
   .info-section ul li::before {
-  color: var(--info-main-marker-small);
-  
-}
+    color: var(--info-main-marker-small);
+
+  }
 
   .skill-item::before {
     display: inline-block;
     color: var(--info-main-marker-small);
   }
+
 }

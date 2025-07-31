@@ -112,7 +112,7 @@ div {
 }
 
 #main_img {
-   border: 0.5rem solid white;
+   border: 0.5rem solid var(--border-clear);
    border-radius: 50%;
    height: 12rem;
    width: 12rem;
@@ -127,7 +127,6 @@ div {
    max-width: 100%;
    height: auto;
    display: block;
-   background-color: red;
 }
 
 .page {
@@ -160,6 +159,7 @@ div {
       margin-top: 1rem;
       padding: 1rem;
    }
+   
 
    .display {
       min-height: auto;
@@ -175,6 +175,7 @@ div {
       margin-bottom: 2rem;
       display: block;
    }
+  
 
    main {
       padding-top: 6rem;
@@ -194,24 +195,3 @@ div {
    }
 }
 
-/*Adjustment of resolution for smaller screens*/
-@media screen  and (max-height: 750px), screen and (max-width: 1339px){
-   section {
-      background: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-   }
-
-
-   div.basic-info {
-      height: auto;
-      background-color: var(--info-main-dysplay);
-      border-radius: 3rem;
-      transition: 0.2s linear;
-      width: 100%;
-      display: block;
-   }
-
-}

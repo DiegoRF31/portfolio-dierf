@@ -45,4 +45,18 @@ h4 {
       background-image: none;
 
    }
+
+   
 }
+
+
+@media screen and (max-height: 600px), screen and (max-width: 900px){
+
+   html {
+   font-size: 8px;
+   height: 100%;
+}
+
+   
+}
+
