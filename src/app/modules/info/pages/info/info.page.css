@@ -107,6 +107,20 @@
   font-size: 1.6rem;
 }
 
+/*fade effect */
+.page {
+  opacity: 0;
+  transform: translateY(2rem);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /*Adjustment of resolution for smaller screens*/
 @media screen and (max-height: 750px),
 screen and (max-width: 1219px) {
