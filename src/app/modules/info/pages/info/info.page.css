@@ -130,10 +130,7 @@ screen and (max-width: 1219px) {
     overflow: visible;
   }
 
-  .skills-container {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 
-  }
 
   .info-section h2 {
     border-bottom: 3px solid var(--border-bottom-small);

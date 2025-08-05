@@ -9,22 +9,45 @@
    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+footer {
+   height: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: var(--top-bar-background);
+   transition: 0.2s linear;
+}
+
 ul {
    display: flex;
    align-items: center;
 
 }
 
-a {
+ .a-topbar {
    height: 7rem;
    text-decoration: none;
-   display: flex;       
-   align-items: center;   
+   display: flex;
+   align-items: center;
    justify-content: center;
    font-size: 1.5rem;
    font-weight: 600;
    padding: 1.5rem;
-   border-bottom: 0.3rem solid transparent; 
+   border-bottom: 0.3rem solid transparent;
+   transition: background-color 0.2s linear, border-color 0.2s linear;
+   margin: 0%;
+}
+
+ .a-footer {
+   height: 7rem;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.5rem;
+   font-weight: 600;
+   padding: 1.5rem;
+   border-top: 0.3rem solid transparent;
    transition: background-color 0.2s linear, border-color 0.2s linear;
    margin: 0%;
 }
@@ -34,10 +57,18 @@ button {
    border: 0;
    padding: 1rem;
    font-size: 1.8rem;
-   border-bottom: 0.3rem solid transparent; 
+   border-bottom: 0.3rem solid transparent;
    background: none;
    color: var(--main-text-color);
    transition: background-color 0.2s linear;
+}
+
+.page-wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   margin: 0;
+   padding: 0;
 }
 
 a:hover,
@@ -58,6 +89,7 @@ figure img {
 
 main {
    padding: 2rem;
+   flex: 1;
 }
 
 section {
@@ -93,21 +125,19 @@ div.basic-info {
    float: left;
    width: 30%;
    height: auto;
-    padding: 3rem 6rem;
+   padding: 3rem 6rem;
 }
 
-div.basic-info p{
+div.basic-info p {
    font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.3;
-  color: var(--main-text-color);
+   font-weight: 500;
+   line-height: 1.3;
+   color: var(--main-text-color);
 }
 
-
-
-div {
-   justify-content: center;
+.flex-padding-container {
    display: flex;
+   justify-content: center;
    padding: 4rem 7rem;
 }
 
@@ -142,8 +172,15 @@ div {
    }
 }
 
+.app-main {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
 /*Adjustment of resolution for smaller screens from 1230px*/
-@media screen and (max-height: 750px), screen and (max-width: 1339px){
+@media screen and (max-height: 750px),
+screen and (max-width: 1339px) {
 
    .top-bar {
       position: fixed;
@@ -159,7 +196,7 @@ div {
       margin-top: 1rem;
       padding: 1rem;
    }
-   
+
 
    .display {
       min-height: auto;
@@ -175,12 +212,13 @@ div {
       margin-bottom: 2rem;
       display: block;
    }
-  
+
 
    main {
       padding-top: 6rem;
       padding-left: 2rem;
       padding-right: 2rem;
+
    }
 
    div.display {
@@ -194,4 +232,3 @@ div {
       margin-top: 0;
    }
 }
-
