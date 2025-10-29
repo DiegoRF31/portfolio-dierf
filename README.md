@@ -1,5 +1,7 @@
 # Portfolio
 
+Welcome to my personal page, my name is Diego Rodriguez, I'm a full stack developer and with the help of this page you will get to know me better,
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
 
 ## Development server
