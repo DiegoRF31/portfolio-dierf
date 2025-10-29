@@ -10,11 +10,20 @@ body.dark {
   --info-main-section: lab(36.38% -15.5 -7.45);
   --info-main-dysplay: lab(28.88% -12.81 -6.05);
 
+  --highlight-detail: #0FC2C0;
+  --highlight-detail-hover: #0bf1ee;
+
+  --border-clear: #d8d8d8;
+  --border-danger: #a30e0e;
+
   /* POSTS */
   --post-list-item-background: #444444;
 
   /*CONTACT*/
   --box-info-background: #2a2a2a;
+  --contact-hover: rgb(68, 68, 68);
+  --box-info-border: rgba(255, 255, 255, 0.2);
+  
 
   /*main backwround image*/
   --background-image-url: url('/images/darck_body.jpg');

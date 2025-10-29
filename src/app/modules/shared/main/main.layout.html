@@ -1,14 +1,18 @@
+<div class="page-wrapper">
 <header class="top-bar">
    <figure>
-      <img src="/favicon.ico" alt="img_logo">
+      <img routerLink="/" src="images/main-logo2.png" alt="img_logo">
    </figure>
    <nav>
       <ul>
          <li>
-            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About Me</a>
+            <a class= "a-topbar" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About Me</a>
          </li>
          <li>
-            <a routerLink="/contact" routerLinkActive="active">Contact</a>
+            <a class= "a-topbar" routerLink="/contact" routerLinkActive="active">Contact</a>
+         </li>
+         <li>
+            <a class= "a-topbar" routerLink="/email" routerLinkActive="active">Email Me</a>
          </li>
          <li>
             <button class="material-icons-sharp" type="button" (click)="changeTheme()">
@@ -19,18 +23,20 @@
    </nav>
 </header>
 <main>
-   <div class="page fade-in">
+   <div class="page fade-in flex-padding-container">
       <section>
-         <div class="basic-info">
+         <div class="basic-info flex-padding-container">
             <h1>About Me</h1>
             <figure id="main_img">
                <img src="/images/main_img.jpg" alt="Main_Image" />
             </figure>
-            <p>I am a dynamic and creative software developer with experience in different areas such as web application
+            <p>I am a dynamic and creative software developer with experience in different areas such as web
+               application
                building,
                responsive design and deployment tools. I am a highly skilled and competent professional in developing
                high quality,
-               secure and scalable solutions. I consider myself a proactive, responsible and organized person capable of
+               secure and scalable solutions. I consider myself a proactive, responsible and organized person capable
+               of
                adapting to different teams and methodologies.</p>
             <p>
          </div>
@@ -40,3 +46,16 @@
       </section>
    </div>
 </main>
+<footer>
+    <nav>
+      <ul>
+         <li>
+            <a class= "a-footer fab fa-linkedin fa-2x" href="https://www.linkedin.com/in/diego-rf/" target="_blank" ></a>
+         </li>
+         <li>
+            <a class= "a-footer fab fa-github fa-2x" href = "https://github.com/DiegoRF31" target="_blank"></a>
+         </li>
+      </ul>
+   </nav>
+</footer>
+</div>

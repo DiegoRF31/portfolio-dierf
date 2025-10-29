@@ -1,5 +1,3 @@
-/* Las variables de este tema sólo aplicarán a todos los demás estilos si
-la etiqueta <body> tiene la clase "light" */
 body.light {
    /* LAYOUT */
    --top-bar-background: #b3b3b3;
@@ -8,13 +6,24 @@ body.light {
    --main-hover-background: rgb(160, 160, 160);
    --main-border-hover-background: lab(55.55% -20.57 -13.09);
    --color-scrollbar-light: rgba(240, 240, 240, 0.068);
+
    --info-main-section: lab(53.22% -21.37 -9.68);
    --info-main-dysplay: lab(45.2% -18.13 -8.8);
+
+   --highlight-detail: #0FC2C0;
+   --highlight-detail-hover: #0bf1ee;
+
+    --border-clear: #d8d8d8;
+    --border-danger: #a30e0e;
+
    /* POSTS */
    --post-list-item-background: #eeeeee;
 
    /*CONTACT*/
    --box-info-background: lab(28.88% -12.81 -6.05);
+   --contact-hover: rgb(68, 68, 68);
+   --box-info-border: rgba(255, 255, 255, 0.2);
+
 
    /*main backwround image*/
    --background-image-url: url('/images/ligth_body.jpg');
@@ -26,5 +35,4 @@ body.light {
    /*buttom line under titles*/
    --border-bottom: lab(53.22% -21.37 -9.68);
    --border-bottom-small: lab(37.58% -20.25 -10.66);
-
 }
