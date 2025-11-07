@@ -2,15 +2,16 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/app/environments/environment';
 import { validationMessage } from 'src/types/general.types';
-import { Inject, PLATFORM_ID } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+
+import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-email',
-  standalone: true,        // <-- aquí lo haces standalone
-  imports: [ReactiveFormsModule],  // <-- importa lo que uses en template
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './email.page.html',
   styleUrls: ['./email.page.css']
 })

@@ -1,61 +1,64 @@
 <div class="page-wrapper">
-<header class="top-bar">
-   <figure>
-      <img routerLink="/" src="images/main-logo2.png" alt="img_logo">
-   </figure>
-   <nav>
-      <ul>
-         <li>
-            <a class= "a-topbar" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About Me</a>
-         </li>
-         <li>
-            <a class= "a-topbar" routerLink="/contact" routerLinkActive="active">Contact</a>
-         </li>
-         <li>
-            <a class= "a-topbar" routerLink="/email" routerLinkActive="active">Email Me</a>
-         </li>
-         <li>
-            <button class="material-icons-sharp" type="button" (click)="changeTheme()">
-               {{ themes[theme] }}_mode
-            </button>
-         </li>
-      </ul>
-   </nav>
-</header>
-<main>
-   <div class="page fade-in flex-padding-container">
-      <section>
-         <div class="basic-info flex-padding-container">
-            <h1>About Me</h1>
-            <figure id="main_img">
-               <img src="/images/main_img.jpg" alt="Main_Image" />
-            </figure>
-            <p>I am a dynamic and creative software developer with experience in different areas such as web
-               application
-               building,
-               responsive design and deployment tools. I am a highly skilled and competent professional in developing
-               high quality,
-               secure and scalable solutions. I consider myself a proactive, responsible and organized person capable
-               of
-               adapting to different teams and methodologies.</p>
-            <p>
-         </div>
-         <div class="display">
-            <router-outlet />
-         </div>
-      </section>
-   </div>
-</main>
-<footer>
-    <nav>
-      <ul>
-         <li>
-            <a class= "a-footer fab fa-linkedin fa-2x" href="https://www.linkedin.com/in/diego-rf/" target="_blank" ></a>
-         </li>
-         <li>
-            <a class= "a-footer fab fa-github fa-2x" href = "https://github.com/DiegoRF31" target="_blank"></a>
-         </li>
-      </ul>
-   </nav>
-</footer>
+   <header class="top-bar">
+      <figure>
+         <img routerLink="/" src="images/main-logo2.png" alt="img_logo">
+      </figure>
+      <nav>
+         <ul>
+            <li>
+               <a class="a-topbar" routerLink="/" routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }">About Me</a>
+            </li>
+            <li>
+               <a class="a-topbar" routerLink="/contact" routerLinkActive="active">Contact</a>
+            </li>
+            <li>
+               <a class="a-topbar" routerLink="/email" routerLinkActive="active">Email Me</a>
+            </li>
+            <li>
+               <button class="material-icons-sharp" type="button" (click)="changeTheme()">
+                  {{ themes[theme] }}_mode
+               </button>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <div class="page fade-in flex-padding-container">
+         <section>
+            <div class="basic-info flex-padding-container">
+               <h1>About Me</h1>
+               <figure id="main_img">
+                  <img src="/images/main_img.jpg" alt="Main_Image" />
+               </figure>
+               <p>I am a dynamic and creative software developer with experience in different
+                  areas such as web application building, responsive design and deployment tools.
+                  I am a highly skilled and competent professional in developing high quality,
+                  secure and scalable solutions.
+                  I consider myself a proactive, responsible, and organized person. 
+                  I enjoy my work and value
+                  the use of AI as a tool to streamline processes. I am also capable of 
+                  adapting to different
+                  teams and methodologies.</p>
+               <p>
+            </div>
+            <div class="display">
+               <router-outlet />
+            </div>
+         </section>
+      </div>
+   </main>
+   <footer>
+      <nav>
+         <ul>
+            <li>
+               <a class="a-footer fab fa-linkedin fa-2x" href="https://www.linkedin.com/in/diego-rf/"
+                  target="_blank"></a>
+            </li>
+            <li>
+               <a class="a-footer fab fa-github fa-2x" href="https://github.com/DiegoRF31" target="_blank"></a>
+            </li>
+         </ul>
+      </nav>
+   </footer>
 </div>
