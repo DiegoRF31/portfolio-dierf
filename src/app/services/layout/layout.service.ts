@@ -8,6 +8,6 @@ export class LayoutService {
   public theme$: BehaviorSubject<string>;
 
   constructor() { 
-    this.theme$ = new BehaviorSubject('light');
+    this.theme$ = new BehaviorSubject('dark');
   }
 }

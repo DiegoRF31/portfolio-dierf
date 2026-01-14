@@ -15,7 +15,6 @@
 }
 
 .info-section {
-  margin-bottom: 3rem;
   padding: 1rem 1.5rem;
 }
 
@@ -31,7 +30,6 @@
 .info-section h3 {
   font-size: 1.6rem;
   margin-top: 1.2rem;
-  margin-bottom: 0.5rem;
   font-weight: 600;
   color: var(--main-text-color);
 }
@@ -80,6 +78,29 @@
   display: inline-block;
 }
 
+button {
+   height: 7rem;
+   border: 0;
+   padding: 1rem;
+   font-size: 1.8rem;
+   border: 0.3rem solid transparent;
+   border-radius: 20px;
+   background: none;
+   color: var(--main-text-color);
+   transition: background-color 0.2s linear;
+   margin: 5px;
+   min-width: 11rem;
+}
+
+button:hover {
+   background: var(--main-hover-background);
+   border-color: var(--main-border-hover-background);
+}
+
+button.active {
+  background: var(--main-active-background);
+   border-color: var(--main-border-hover-background);
+}
 
 .info-section ul {
   list-style-position: inside;

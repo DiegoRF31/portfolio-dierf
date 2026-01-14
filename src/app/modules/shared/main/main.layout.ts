@@ -1,15 +1,15 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { LayoutService } from '@services/layout/layout.service';
 import { Subscription } from 'rxjs';
-import { RouterModule } from '@angular/router';  // ✅ Import this
-import { CommonModule } from '@angular/common';   // Optional: if you use *ngIf, etc.
+import { RouterModule } from '@angular/router';  
+import { CommonModule } from '@angular/common';   
 
 @Component({
-  standalone: true,  // ✅ Ensure it's declared as standalone
+  standalone: true,  
   selector: 'app-main',
   templateUrl: './main.layout.html',
   styleUrls: ['./main.layout.css'],
-  imports: [RouterModule, CommonModule]  // ✅ Import RouterModule here
+  imports: [RouterModule, CommonModule]  
 })
 export class MainLayout implements OnInit, OnDestroy {
   public theme: string;
@@ -38,5 +38,11 @@ export class MainLayout implements OnInit, OnDestroy {
 
   public changeTheme(): void {
     this.layoutService.theme$.next(this.themes[this.theme]);
+  }
+
+   activeTab: string = 'skills';
+
+  setActiveTab(tab: string) {
+    this.activeTab = tab;
   }
 }

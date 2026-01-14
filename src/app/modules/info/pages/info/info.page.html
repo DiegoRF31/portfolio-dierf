@@ -1,7 +1,27 @@
+<nav class="tabs">
+                  <button 
+                  [class.active]="activeTab === 'skills'" 
+                  (click)="setActiveTab('skills')">
+                     Skills
+                  </button>
+
+                  <button 
+                  [class.active]="activeTab === 'experience'" 
+                  (click)="setActiveTab('experience')">
+                     Experience
+                  </button>
+
+                  <button 
+                  [class.active]="activeTab === 'education'" 
+                  (click)="setActiveTab('education')">
+                     Education
+                  </button>
+               </nav>
+
 <h1 class="section-title page">About my professional experience</h1>
 
 <div class="info-container page">
-  <section class="info-section">
+  <section class="info-section" *ngIf="activeTab === 'skills'">
     <h2>Core Skills</h2>
     <div class="skills-container">
       <div class="skill-item">JavaScript</div>
@@ -41,7 +61,7 @@
         </div>
       </Section>
   </section>
-  <section class="info-section">
+  <section class="info-section" *ngIf="activeTab === 'experience'">
     <h2>Professional Experience</h2>
     <h3>OM Agency – Full-Stack Developer <span class="date">Oct 2024 - Present</span></h3>
     <ul>
@@ -59,7 +79,7 @@
       <li>Azure and Agile integration</li>
     </ul>
   </section>
-  <section class="info-section">
+  <section class="info-section" *ngIf="activeTab === 'education'">
     <h2>Education</h2>
     <ul>
       <li>Software Engineering – Universidad de Costa Rica (2019 - Present)</li>

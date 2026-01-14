@@ -4,6 +4,7 @@ body.dark {
   --body-background: #242424;
   --main-text-color: #fff;
   --main-hover-background: rgba(255, 255, 255, 0.1);
+  --main-active-background: rgba(0, 0, 0, 0.096);
   --main-border-hover-background: lab(55.55% -20.57 -13.09);
   --color-scrollbar-light: rgba(65, 65, 65, 0.178);
 
@@ -26,7 +27,7 @@ body.dark {
   
 
   /*main backwround image*/
-  --background-image-url: url('/images/darck_body.jpg');
+  --background-image-url: url('/images/dark_body.png');
 
   /*markers of test like li's into ul's*/
   --info-main-marker: lab(53.22% -21.37 -9.68);

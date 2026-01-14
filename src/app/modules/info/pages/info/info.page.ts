@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './info.page.css'
 })
 export class InfoPage {
+   activeTab: 'skills' | 'experience' | 'education' = 'skills';
 
+  setActiveTab(tab: 'skills' | 'experience' | 'education') {
+    this.activeTab = tab;
+  }
 }
