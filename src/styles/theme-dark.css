@@ -20,14 +20,20 @@ body.dark {
   /* POSTS */
   --post-list-item-background: #444444;
 
+ body.dark {
+  --top-bar-background: #303030;
+  --body-background: #242424;
+  --main-text-color: #fff;
+
+  /* Three.js waves */
+  --wave-color: #0FC2C0;
+  --three-bg-opacity: 0.6;
+}
+
   /*CONTACT*/
   --box-info-background: #2a2a2a;
   --contact-hover: rgb(68, 68, 68);
   --box-info-border: rgba(255, 255, 255, 0.2);
-  
-
-  /*main backwround image*/
-  --background-image-url: url('/images/dark_body.png');
 
   /*markers of test like li's into ul's*/
   --info-main-marker: lab(53.22% -21.37 -9.68);

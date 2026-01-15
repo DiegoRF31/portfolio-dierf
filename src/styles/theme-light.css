@@ -13,20 +13,28 @@ body.light {
    --highlight-detail: #0FC2C0;
    --highlight-detail-hover: #0bf1ee;
 
-    --border-clear: #d8d8d8;
-    --border-danger: #a30e0e;
+   --border-clear: #d8d8d8;
+   --border-danger: #a30e0e;
 
    /* POSTS */
    --post-list-item-background: #eeeeee;
+
+
+   body.light {
+  /* LAYOUT */
+  --top-bar-background: #b3b3b3;
+  --body-background: #e7e7e7;
+  --main-text-color: #000;
+
+  /* Three.js waves */
+  --wave-color: #111111;
+  --three-bg-opacity: 0.35;
+}
 
    /*CONTACT*/
    --box-info-background: lab(28.88% -12.81 -6.05);
    --contact-hover: rgb(68, 68, 68);
    --box-info-border: rgba(255, 255, 255, 0.2);
-
-
-   /*main backwround image*/
-   --background-image-url: url('/images/ligth_body.png');
 
    /*markers of test like li's into ul's*/
    --info-main-marker: lab(55.55% -20.57 -13.09);

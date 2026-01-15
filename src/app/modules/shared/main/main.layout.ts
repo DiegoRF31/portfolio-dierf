@@ -3,13 +3,18 @@ import { LayoutService } from '@services/layout/layout.service';
 import { Subscription } from 'rxjs';
 import { RouterModule } from '@angular/router';  
 import { CommonModule } from '@angular/common';   
+import { ThreeBackgroundComponent } from '@shared/background/three-background/three-background.component';
 
 @Component({
   standalone: true,  
   selector: 'app-main',
   templateUrl: './main.layout.html',
   styleUrls: ['./main.layout.css'],
-  imports: [RouterModule, CommonModule]  
+  imports: [
+    RouterModule, 
+    CommonModule,
+    ThreeBackgroundComponent
+  ]  
 })
 export class MainLayout implements OnInit, OnDestroy {
   public theme: string;
