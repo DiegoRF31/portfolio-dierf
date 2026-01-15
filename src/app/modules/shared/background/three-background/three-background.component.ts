@@ -41,12 +41,12 @@ export class ThreeBackgroundComponent
 
       const wave1 =
         Math.sin(vertex.x * 0.05 + this.time) * 2.8;
-
+        
       const wave2 =
-        Math.sin(vertex.x * 0.15 + this.time * 0.6) * 1.4;
+        Math.sin(vertex.x * 0.15 + this.time * 0.6) * 2;
 
       const waveDepth =
-        Math.cos(vertex.y * 0.08 + this.time * 0.4) * 1.2;
+        Math.cos(vertex.y * 0.4 + this.time * 0.9) * 1;
 
       position.setZ(i, wave1 + wave2 + waveDepth);
     }

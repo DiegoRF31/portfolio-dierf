@@ -21,7 +21,7 @@
 <h1 class="section-title page">About my professional experience</h1>
 
 <div class="info-container page">
-  <section class="info-section" *ngIf="activeTab === 'skills'">
+  <section class="info-section page" *ngIf="activeTab === 'skills'" >
     <h2>Core Skills</h2>
     <div class="skills-container">
       <div class="skill-item">JavaScript</div>
@@ -46,22 +46,23 @@
     <Section class="logo-container">
         <div>
           <figure>
-            <img routerLink="/" src="images/logo_js.png" alt="img_logo">
+            <img routerLink="/" src="assets/images/logo_js.png" alt="img_logo">
           </figure>
         </div>
         <div>
           <figure>
-            <img routerLink="/" src="images/logo_css.png" alt="img_logo">
+            <img routerLink="/" src="assets/images/logo_css.png" alt="img_logo">
           </figure>
         </div>
         <div>
           <figure>
-            <img routerLink="/" src="images/logo_html.png" alt="img_logo">
+            <img routerLink="/" src="assets/images/logo_html.png" alt="img_logo">
           </figure>
         </div>
       </Section>
   </section>
-  <section class="info-section" *ngIf="activeTab === 'experience'">
+
+  <section class="info-section page" *ngIf="activeTab === 'experience'">
     <h2>Professional Experience</h2>
     <h3>OM Agency – Full-Stack Developer <span class="date">Oct 2024 - Present</span></h3>
     <ul>
@@ -79,7 +80,7 @@
       <li>Azure and Agile integration</li>
     </ul>
   </section>
-  <section class="info-section" *ngIf="activeTab === 'education'">
+  <section class="info-section page" *ngIf="activeTab === 'education'">
     <h2>Education</h2>
     <ul>
       <li>Software Engineering – Universidad de Costa Rica (2019 - Present)</li>
